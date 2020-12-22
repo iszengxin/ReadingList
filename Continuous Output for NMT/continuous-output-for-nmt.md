@@ -75,7 +75,11 @@
 
 ## A Margin-based Loss with Synthetic Negative Samples for Continuous-output Machine Translation，EMNLP 2019
 
-* 不使用softmax而是训练词嵌入的模型，模型参数更少，训练是速度更快。
+* 探究了margin-based loss在优化连续输出模型中的作用，并通过实验发现基于Synthetic负采样的syn-margin方法比vMF和标准margin-based losses更好
+* 贡献：
+  * syn-margin loss的公式
+  * syn-margin loss的几何分析
+  * 对NMT的连续输出模型的实验
 
 
 
