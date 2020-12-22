@@ -83,7 +83,27 @@
 
 ## ReWE: Regressing Word Embeddings for Regularization of Neural Machine Translation Systems，NAACL 2019
 
-* 
+* 正则化方法即向模型引入额外的信息，目的是简化模型。
+
+* 常见的正则化：
+
+  * 最基本的正则化方法是在原目标函数中添加惩罚项，对复杂度高的模型进行“惩罚”：
+
+  ​       $J(w;x,y)=J(w;x,y)+\alpha \Omega(w)$
+
+  ​       其中$x$，$y$为训练样本对应的源语和目标语，$w$为模型权重向量，$J(\cdot)$为目标函数，$\Omega(w)$为惩罚项，参数$\alpha$控制正则化强弱。常用的$\Omega$函数有$l_1$范数和$l_2$范数。
+
+  * $l_1$正则化
+
+    * $\Omega(w)=||w||_1=\sum_i|w_i|$
+
+    ​     但该正则化会使许多参数的最优值变成0，导致模型变得稀疏https://www.zhihu.com/question/37096933/answer/70426653
+
+  * $l_2$正则化
+
+    * $\Omega(w)=||w||_2^2=\sum_iw_i^2$
+
+  
 
 
 
