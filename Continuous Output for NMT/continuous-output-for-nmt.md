@@ -81,5 +81,17 @@
   * syn-margin loss的几何分析
   * 对NMT的连续输出模型的实验
 
+## ReWE: Regressing Word Embeddings for Regularization of Neural Machine Translation Systems，NAACL 2019
+
+* 
+
+
+
+
+
+
+
+
+
 
 
