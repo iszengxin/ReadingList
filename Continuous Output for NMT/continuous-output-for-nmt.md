@@ -81,7 +81,7 @@
   * syn-margin loss的几何分析
   * 对NMT的连续输出模型的实验
 
-## ReWE: Regressing Word Embeddings for Regularization of Neural Machine Translation Systems，NAACL 2019
+## Regressing Word Embeddings for Regularization of Neural Machine Translation，IEEE 2019
 
 * 正则化方法即向模型引入额外的信息，目的是简化模型。
 
@@ -103,7 +103,17 @@
 
     * $\Omega(w)=||w||_2^2=\sum_iw_i^2$
 
-  
+* 该文将词嵌入向量作为正则项引入模型训练中
+
+* 训练：
+
+  * $e_j=ReWE(s_j)=W_2(RELU(W_1s_j+b_1))+b_2$
+
+    其中$s_j$是解码器端隐藏向量，$W_1、W_2、b_1、b_2$是模型参数
+
+  * $ReWE_{loss}=l(e_j,e(y_j))$
+
+  ​                 其中$e_j$是模型输出，$e(y_j)$是真实目标语言词嵌入向量，
 
 
 
